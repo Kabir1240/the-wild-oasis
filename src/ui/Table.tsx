@@ -74,7 +74,6 @@ export default function Table({ columns, children }) {
 
 function Header({ children }) {
   const { columns } = useContext(TableContext);
-  console.log(columns);
   return (
     <StyledHeader role="row" columns={columns} as='header'>
       {children}

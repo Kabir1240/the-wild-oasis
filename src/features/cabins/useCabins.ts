@@ -5,11 +5,11 @@ export default function useCabins() {
   const {
     isPending: isFetchingCabins,
     data: cabins,
-    // error,
+    error: cabinsError,
   } = useQuery({
     queryKey: ['cabins'],
     queryFn: getCabins,
   })
 
-  return { isFetchingCabins, cabins }
+  return { isFetchingCabins, cabinsError, cabins }
 }

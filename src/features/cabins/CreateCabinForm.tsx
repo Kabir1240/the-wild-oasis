@@ -26,6 +26,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
   
   const onSubmit = (data) => {
     const image = typeof data.image === 'string' ? data.image : data.image[0]
+    
     if (isEditSession) updateCabin({ newCabinData: { ...data, image }, id: editId }, {
       onSuccess: () => {
         reset();
@@ -138,7 +139,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         <Button variation="secondary" type="reset" onClick={() => onCloseModal?.()}>
           Cancel
         </Button>
-        <Button onClick={() => onCloseModal?.()} disabled={isWorking}>Edit cabin</Button>
+        <Button disabled={isWorking}>Edit cabin</Button>
       </FormRow>
     </Form>
   );
