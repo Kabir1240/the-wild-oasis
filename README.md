@@ -1,27 +1,20 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# The Wild Oasis
+Welcome to The Wild Oasis! This is a hotel management web app, where hotel employees can manage cabins, bookings, and guests.
+## Key Features
+- User authentication ensures that only hotel employees can access the system.
+- Employees can manage their profiles, including uploading avatars and changing passwords.
+- The app features a dashboard showing recent stats on bookings, check-ins, and sales.
+- Manage cabins with the ability to create, update, or delete cabin records.
+- Handle bookings with the ability to check guests in and out, and update booking statuses.
+- Real-time updates for cabins and bookings using Supabase.
+- Visual statistics with charts displaying sales, occupancy rates, and other important data.
+- Fully functional dark mode for a customized user experience.
+## Technologies Used
+- React for the frontend.
+- Supabase for the database and real-time data updates.
+- React Query for data fetching and caching.
+- React Router for navigation.
+- React Hook Form for efficient form handling.
+- Recharts for data visualization (charts and stats).
+- Styled Components for styling the UI, including dark mode.
+- Vite for development environment and build system.
