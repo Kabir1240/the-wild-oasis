@@ -1,27 +1,50 @@
-# React + TypeScript + Vite
+# The Wild Oasis - Hotel Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue)
+![Supabase](https://img.shields.io/badge/Backend-Supabase-green)
+![Style](https://img.shields.io/badge/Styling-Styled%20Components-pink)
 
-Currently, two official plugins are available:
+## 📋 Project Overview
+**The Wild Oasis** is a comprehensive internal SaaS tool designed for hotel staff to manage cabin bookings, guests, and operational metrics. It features a real-time dashboard, complex data filtering, and a secure authentication system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was engineered to implement advanced **State Management patterns** (React Query) and robust **Server-Side Rendering** integration.
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **📊 Business Dashboard:** Visualizes sales statistics, occupancy rates, and activity logs using Recharts.
+* **🏨 Cabin Management:** Complete CRUD operations for hotel cabins with image upload capabilities.
+* **📅 Booking System:** Status management (Check-in/Check-out) with server-side logic to handle payment confirmation.
+* **🔐 Authentication:** Secure staff login via Supabase Auth (JWT) with row-level security (RLS).
+* **🌙 Dark Mode:** Fully responsive UI with toggleable dark/light themes.
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Tech Stack
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+* **Framework:** React.js (Vite)
+* **State Management:** React Query (TanStack Query) for remote state, Context API for UI state.
+* **Backend / DB:** Supabase (PostgreSQL).
+* **Styling:** Styled Components.
+* **Forms:** React Hook Form.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ⚙️ Installation & Setup
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/Kabir1240/the-wild-oasis.git](https://github.com/Kabir1240/the-wild-oasis.git)
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Variables**
+    Create a `.env` file in the root directory and add your Supabase credentials:
+    ```env
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_KEY=your_supabase_anon_key
+    ```
+
+4.  **Run Locally**
+    ```bash
+    npm run dev
+    ```
